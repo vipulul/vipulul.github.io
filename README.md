@@ -1,1 +1,0 @@
-# vipulul.github.io
