@@ -4,12 +4,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-<script type="module" crossorigin src="/assets/index.1c495330.js"></script>
-  <link rel="stylesheet" href="/assets/index.8f6db150.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b42a0ee549.js" crossorigin="anonymous"></script>
+
+<script type="module" crossorigin src="/assets/index.908de2ce.js"></script>
+  <link rel="stylesheet" href="/assets/index.029e078c.css">
 </head>
-<body>
-    <div class="bg-white dark:bg-gray-800">
-    <h1 class="text-4xl font-bold text-center text-blue-600">Hello World</h1>
-</div>
+<body class="landing is-preload bg-bgray-900">
+  <header class="alt" id="header">
+    <nav class="bg-gray-800 ">
+        <div class=" mx-auto px-10 sm:px-6 lg:px-8 h-24">
+          <div class="relative flex items-center justify-between h-auto">
+            <div class="flex-1 inline-flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-9 w-auto" src="/assets/logo.031e90d2.png" alt="Workflow">
+                <img class="hidden lg:block h-20 w-auto" src="/assets/logo.031e90d2.png" alt="Workflow">
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4 mt-8">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-gray-900 text-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Me</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">      
+              <!-- Profile dropdown -->
+              <div class="ml-3 relative">
+                <div>
+                  <span style="color: #6600CC;">
+                    <a href="#" class="hover:bg-gray-700 hover:text-white px-3 py-3 rounded-md text-sm font-medium"><i class="md:fa-xs fa-xs fab fa-linkedin hover:bg-gray-700"></i></a>
+                  <a href="mailto:vipulul@gmail.com" class="ml-2 "><i class="fas fa-envelope-square fa-2x hover:bg-gray-700"></i> </a>
+                  <a href="https://www.linkedin.com/in/paul-bogdan-grigore-a9b4aa140" class="ml-2 "><i class="md:fa-xs fa-2x  fab fa-linkedin hover:bg-gray-700"></i> </a>
+                  <a href="https://github.com/vipulul" class="ml-2" ><i class="fab fa-github-square fa-2x hover:bg-gray-700"></i></a>
+                  <a href="https://twitter.com/vipulul69" class="ml-2"><i class="fab fa-twitter-square fa-2x hover:bg-gray-700"></i> </a>
+                  </span>
+                   
+                </div>
+                <!--
+                  Profile dropdown panel, show/hide based on dropdown state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-gray-300 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Me</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <!-- <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img2">
+      <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl" id="banner">
+        Welcome to my site!
+      </div>
+    </header>-->
+
+    <section id="banner" class="bg-hero-pattern bg-cover bg-center bg-no-repeat" >
+			<div class="inner p-10 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl font-medium">
+        <h2>Paul-Bogdan Grigore</h2>
+				<p class="text-lg p-10">Student by day, Level Designer by night</p>
+			</div>
+			<a href="#two" class="more scrolly">Learn More</a>
+		</section>
+
+    <div class="max-w-lg m-auto">
+    <p class="mb-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a
+      magna non varius. Proin leo felis, euismod non porta eget, varius sit amet
+      sapien. Maecenas in nulla at leo convallis consectetur id a sapien. Nulla
+      nec pulvinar nisi. Vivamus non facilisis lacus, et volutpat libero. Nulla ac
+      odio aliquam, accumsan arcu ut, lacinia est. Nulla eu sem elit. Fusce nec
+      laoreet sem, semper molestie libero.
+    </p>
+    <p class="mb-4">
+      Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin, lectus et
+      fringilla ultrices, dolor nisi scelerisque tortor, vel finibus magna massa
+      non nunc. Phasellus massa quam, egestas a nisl sed, porta volutpat metus.
+      Nunc sed elit ac tellus tempor cursus. Suspendisse potenti. Vestibulum
+      varius rutrum nisl nec consequat. Suspendisse semper dignissim sem viverra
+      semper. Nulla porttitor, purus nec accumsan pharetra, nisi dolor condimentum
+      ipsum, id consequat nulla nunc in ligula.
+    </p>
+    <p class="mb-12">
+      Nulla pharetra lacinia nisi, vitae mollis tellus euismod id. Mauris porta
+      dignissim hendrerit. Cras id velit varius, fermentum lectus vitae, ultricies
+      dolor. In bibendum rhoncus purus vel rutrum. Nam vulputate imperdiet
+      fringilla. Donec blandit libero massa. Suspendisse dictum diam mauris, vitae
+      fermentum dolor tincidunt in. Pellentesque sollicitudin venenatis dolor,
+      vitae scelerisque elit ultrices eu. Donec eget sodales risus, quis dignissim
+      neque.
+    </p>
+  </div>
+  <section
+    class="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover custom-img"
+  >
+    <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+      Parralax inline
+    </div>
+  </section>
+  <div class="max-w-lg m-auto" id ="two">
+    <p class="mb-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a
+      magna non varius. Proin leo felis, euismod non porta eget, varius sit amet
+      sapien. Maecenas in nulla at leo convallis consectetur id a sapien. Nulla
+      nec pulvinar nisi. Vivamus non facilisis lacus, et volutpat libero. Nulla ac
+      odio aliquam, accumsan arcu ut, lacinia est. Nulla eu sem elit. Fusce nec
+      laoreet sem, semper molestie libero.
+    </p>
+    <p class="mb-4">
+      Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin, lectus et
+      fringilla ultrices, dolor nisi scelerisque tortor, vel finibus magna massa
+      non nunc. Phasellus massa quam, egestas a nisl sed, porta volutpat metus.
+      Nunc sed elit ac tellus tempor cursus. Suspendisse potenti. Vestibulum
+      varius rutrum nisl nec consequat. Suspendisse semper dignissim sem viverra
+      semper. Nulla porttitor, purus nec accumsan pharetra, nisi dolor condimentum
+      ipsum, id consequat nulla nunc in ligula.
+    </p>
+    <p class="mb-4">
+      Nulla pharetra lacinia nisi, vitae mollis tellus euismod id. Mauris porta
+      dignissim hendrerit. Cras id velit varius, fermentum lectus vitae, ultricies
+      dolor. In bibendum rhoncus purus vel rutrum. Nam vulputate imperdiet
+      fringilla. Donec blandit libero massa. Suspendisse dictum diam mauris, vitae
+      fermentum dolor tincidunt in. Pellentesque sollicitudin venenatis dolor,
+      vitae scelerisque elit ultrices eu. Donec eget sodales risus, quis dignissim
+      neque.
+    </p>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrollex.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/browser.min.js"></script>
+  <script src="js/breakpoints.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
