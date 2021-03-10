@@ -11,7 +11,14 @@
 		$wrapper = $('#page-wrapper'),
 		$banner = $('#banner'),
 		$nav = $('#nav'),
-		$header = $('#header');
+		$header = $('#header'),
+		$firstproject = $('#two'),
+		$about = $('#about'),
+		$contact = $('#end'),
+		$homebutton = $('#homebutton'),
+		$projectsbutton = $('#projbutton'),
+		$aboutmebutton = $('#aboutbutton'),
+		$contactmebutton = $('#contactbutton');
 
 	// Breakpoints.
 		breakpoints({
@@ -28,6 +35,7 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+
 
 	// Mobile?
 		if (browser.mobile)
@@ -77,7 +85,7 @@
 				terminate:	function() { $header.removeClass('alt'); 
 										$nav.removeClass('alt'); 
 										$nav.addClass('bg-gray-900');
-										$header.fadeIn(1000);
+										$header.fadeIn(300);
 
 
 			},
@@ -85,15 +93,55 @@
 				enter:		function() { $header.addClass('alt'); 
 										$nav.addClass('alt'); 
 										$nav.removeClass('bg-gray-900');
-										$header.fadeOut(1000);
+										$header.fadeOut(300);
 			
 			},
 				leave:		function() { $header.removeClass('alt'); 
 										$nav.removeClass('alt'); 
 										$nav.addClass('bg-gray-900');
-										$header.fadeIn(1000);
+										$header.fadeIn(300);
 			}
 			});
+
+			// $firstproject.scrollex({
+			// 	bottom:		$header.outerHeight() + 1,
+			// 	terminate:	function() { 
+			// 		clearbuttons();
+			// 		$projectsbutton.addClass('bg-gray-700');
+			// },
+
+			// 	enter:		function() { 
+			// 		$projectsbutton.removeClass('bg-gray-700');
+			// },
+			// 	leave:		function() {
+			// 		clearbuttons(); 
+			// 		$projectsbutton.addClass('bg-gray-700');
+			// }
+			// });
+
+			// $about.scrollex({
+			// 	bottom:		$header.outerHeight() + 1,
+			// 	terminate:	function() { 
+			// 		clearbuttons();
+			// 		$aboutmebutton.addClass('bg-gray-700');
+			// },
+
+			// 	enter:		function() { 
+			// 		$aboutmebutton.removeClass('bg-gray-700');
+			// },
+			// 	leave:		function() {
+			// 		clearbuttons(); 
+			// 		$aboutmebutton.addClass('bg-gray-700');
+			// }
+			// });
+
+			// function clearbuttons() 
+			// { 
+			// 	$homebutton.removeClass('bg-gray-700');
+			// 	$projectsbutton.removeClass('bg-gray-700');
+			// 	$aboutmebutton.removeClass('bg-gray-700');
+			// 	$contactmebutton.removeClass('bg-gray-700');
+			//  }
 
 		}
 
