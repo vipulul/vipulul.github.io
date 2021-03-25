@@ -1,0 +1,361 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEAElEQVRYR91XSSi1bRi+zmfIPEUnYSNlSZQ5loaMxcJsYTplKJ0yDxs2JAtZo5SFSBRiY4iwYCEiC0NKMs/z+brueo/zH/7v9xVO/U/pPd7zvPdz3dd93df9HpVardbBhEtlcgDe3t46R0dH/Pr1S8/D6+srbm9vcXl5CX42XNzn4OAAW1tbqFQq/VePj4+4vr7G3d0ddLo3Uo3387ubmxt9bJVGo9EVFRVJ0JOTEzw/P8PCwgILCwvo6enBwcHBP0AQbH5+PuLj42Fubo6zszPZf3R0hOHhYYyPjwt4Lh7u5eWFnJwchIaG6mPPz8+ju7tbYqu0Wq2usrJSDqmqqpJADQ0N8PDwwMDAALq6unBxcaHP1NnZGRUVFUhLS8POzg6am5sREhKCzMxM+b+8vBx7e3vCgpubGxg7MjISc3NzGBwcRHZ2Nvz9/TEyMoLOzs43AKSwoKBAUDU2NiIqKgqzs7Oora3F8fHxOwCpqanY2tpCaWkpfHx80N7ejpeXF0liZmZGPgcEBKCtrQ329vaoqanB4uIiYmNjhZH9/X2592UM5OXlSeYajQa7u7uikYyMDJSVleH8/By5ubm4urqCi4sLWMb7+3tsbGy8ASDKzc1NqZ+igd7eXpyenoo+WE/SamlpKUyRAa7t7W05TK1WY3JyEi0tLTg8PISdnR0IioDIIK9JSUmiBVdXV2GA4N4xsL6+DpaDQB4eHhAUFCToiZoKX1lZEWHFxMRIzevr60FdNDU1SVfU1dVJvZmEwgCTyMrKEp3FxcXJwbyXnp7+XgOrq6tSPy4GtLa2hpOT0zsGUlJSRAPFxcWwsrISsXp6eqKjowP9/f0CnhpobW2VZ9lpLFFCQoLUnt3znwA+MkjjLqBg2TFarVaAkwkyQABKF0RERGB6elq6gAwkJyeLTghK7wNPT0+orq4GS6Aw8BEAYx8glWZmZuDz1ACzZ3bUi7EPcA81xMOHhoakW1SKE/IBGhHr/6f1b05I0HRC/v3JCRmb7LAjeDX9LPjMMGLWbFPDefFVA/RTDLDuVCyvX70+BYDKLywsFBdjfSkm1lrRw0fMcB/djn6iaIJtbWNjI22rTNK/BsBpScdkS5ER+jp9wnhRYMvLy5iampKuop+wW+gNgYGBem/5awDMfm1tDbRpMlNSUiLMGC9mTz/gePbz80NYWJg4J+/5+voiOjpaQHw7gImJCQQHB4t108r7+vpkViQmJgoTPwaAY5haGB0dxdLSEsLDwwXUjwJgmcbGxqQMLAsn6o8CMCkD36IBuqNhG/IlVXl5+bYuUHyAL6xUtXIgjcXd3V1GLe99mw8YOqHxbwZDBr7UCU0+C0w+Db96AhrG+5QP/K8B/AbvMybr7UUJOgAAAABJRU5ErkJggg=="/>
+    <title>Paul-Bogdan Grigore | Level Designer</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b42a0ee549.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+
+
+
+<script type="module" crossorigin src="/assets/nested.82b6fdc4.js"></script>
+  <link rel="modulepreload" href="/assets/tailwind.44b2a390.js">
+  <link rel="stylesheet" href="/assets/tailwind.a281d728.css">
+</head>
+<body class=" bg-bgray-900">
+  <div id="one">
+
+  </div>
+  <header class=" bg-gray-900" id="header">
+    <nav id="nav" class="  bg-gray-900">
+        <div class=" mx-auto px-10 sm:px-6 lg:px-8 h-24" >
+          <div class="relative flex items-center justify-between h-auto">
+            <div class="flex-1 inline-flex items-center justify-center sm:items-stretch sm:justify-start">
+              <a href="index.html">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-9 w-auto" src="/assets/logo.031e90d2.png" alt="Workflow">
+                <img class="hidden lg:block h-20 w-auto" src="/assets/logo.031e90d2.png" alt="Workflow">
+              </div>
+            </a>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4 mt-8">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <!-- <a href="#" class="bg-gray-900 text-gray-400 px-3 py-2 rounded-md text-sm font-medium scrolly">Home</a> -->
+                  <a href="index.html#one" id="homebutton" class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="index.html#two" id="projbutton" class="more scrolly  text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium scrolly">Projects</a>
+                  <a href="index.html#about" id="aboutbutton" class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Me</a>
+                  <a href="index.html#end" id="contactbutton" class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">      
+              <!-- Profile dropdown -->
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4 mt-8">
+
+                </div>
+              </div>
+
+                <!--
+                  Profile dropdown panel, show/hide based on dropdown state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+
+      </nav>
+    </header>
+
+
+
+  <section id="lmao" class="container flex items-center justify-center max-w-full h-4/6  bg-fixed bg-center bg-cover bg-no-repeat custom-img3 ">
+        <div class="m-6 p-5 text-center text-5xl text-white bg-opacity-100 font-bold bg-gray-500 ">
+          <h1>Xel</h1>
+          <p class="text-xl">GAME DESIGN / LEVEL DESIGN / LEVEL SCRIPTING</p>
+        </div>
+  </section>
+
+  <div class="mt-7 text-5xl text-center text-white font-bold  ">
+    <h1> TRAILER / PITCH VIDEO </h1>
+  </div>
+
+
+  <section class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-10 flex justify-center">
+     <iframe width="1000" height="500" src="https://www.youtube.com/embed/zaKAJ9mt97c" title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+
+  
+  <section class="container text-left max-w-6xl m-auto text-white font-normal mt-10">
+
+    <div class="m-6 p-5 text-center text-5xl text-white font-bold  ">
+      <h1>ABOUT</h1>
+    </div>
+
+  <div class="flex flex-wrap text-center">
+    <div class="w-full sm:w-1/2 lg:w-2/4 xl:w-3/6 mb-4 p-10 ">
+      <div class="text-3xl text-white font-bold  ">
+        <h1> Summary </h1>
+      </div>
+      <p class="text-xl text-white font-normal  ">
+        This was the third project of my second year of university, where we took the role of entrepreneurs that want to find funding for an interactive digital product.
+        Me and my team decided to make a Story Driven Puzzle game.
+
+      </p>
+    </div>
+    <div class="w-full sm:w-1/2 lg:w-2/4 xl:w-3/6 mb-4 p-10 ">
+      <div class="text-3xl text-white font-bold  ">
+        <h1> Details </h1>
+      </div>
+      <p class="text-xl text-white font-normal  ">
+        Tools: Unreal Engine
+      </p>
+      <p class="text-xl text-white font-normal  ">
+        Date: February 2021
+      </p>
+      <p class="text-xl text-white font-normal  ">
+        Development Time: 2 Weeks
+      </p>
+      <p class="text-xl text-white font-normal  ">
+        Assets:  Made by the artists of our team: Finn Tran, Tran Nhan and Donislav Todorov
+      </p>
+    </div>
+  </div>
+
+  <div class="m-6 text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+    <p></p>
+
+    <div class="mt-7 text-3xl text-center text-white font-bold  ">
+      <h1> Quick Summary </h1>
+    </div>
+
+    <p class="mt-7">
+      Xel is an adventure puzzle game with rich and complex puzzle elements. It takes its inspiration from highly successful works of similar genres and 
+      wishes to combine their heavily diegetic approach to storytelling with engaging gameplay mechanics that complement the immersive style of its genre.  
+    </p>
+
+</div>
+  </section>
+
+  <div class="mt-7 text-5xl text-center text-white font-bold  ">
+    <h1> Mechanics Breakdown </h1>
+  </div>
+
+<section class="container mt-10 text-left min-w-full text-white font-normal ">
+
+    <div class="text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+     <img src="/assets/vent.3ac76353.gif" class="max-w-4xl float-right">
+     <div class="mt-20 text-5xl text-center text-white font-bold  ">
+      <h1> Vents </h1>
+     </div>
+        <p class="mt-10 text-3xl font-medium">Roof Floor - The Roof acts as the final arena combined with the final boss battle which ends with the final boss getting throwed off the building. </p>
+        <p class="mt-48 text-3xl font-medium">Middle Two Floors (top one shown in the pic) - The middle two floors act as a chill but still action packed part since it combines parkouring with some fast paced shooting.
+        </p>
+        <p class="mt-48 text-3xl font-medium">Bottom Floor - This is where the player starts the level. This floor focuses on platforming and exploring with small combat encounters.
+        </p>
+    </div>
+  
+</section>
+
+<section class="container mt-80 text-left min-w-full text-white font-normal ">
+
+  <div class="text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+   <img src="/assets/Grab And Mirror.9a1c9b08.gif" class="max-w-4xl float-left">
+
+   <div class="mt-20 text-5xl text-center text-white font-bold  ">
+    <h1> Movable Boxes & Levers </h1>
+   </div>
+
+      <p class="mt-10 text-3xl font-medium">The ground floor focuses on platforming, while also providing players with a few combat parts.  </p>
+      <p class="mt-10 text-3xl font-medium">The player stars at the red circle and as he spawns, he is greeted by two enemies that are facing away from him, this giving the option of stealth.
+        There is also a moving fan in the room that catches the eye of the player towards it, thus guiding where to go.</p>
+        <p class="mt-10 text-3xl font-medium">In the middle of the floor, after the player drops down from the air vents, I blocked the vision of the room while still showing the player the end location to push the player to explore a bit.</p>
+        <p class="mt-10 text-3xl font-medium">Even though the level is linear, at the half-point of the floor, the player has a second option for getting to the elevator.</p>
+
+  </div>
+</section>
+
+<section class="container mt-32 text-left min-w-full text-white font-normal ">
+
+  <div class="text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+   <img src="/assets/Laser System.c60da0d8.gif" class="max-w-4xl float-right">
+
+   <div class="mt-7 text-5xl text-center text-white font-bold  ">
+    <h1> Laser System </h1>
+  </div>
+
+      <p class="mt-10 text-3xl font-medium">
+        When the player arrives on this floor the only two things that he can see are a broken window, which gives a great visa opportunity, and a locked door.
+         After the player notices that the door is locked and he turns around he will notice the platform that was hanging there from the beginning.
+      </p>
+      <p class="mt-10 text-3xl font-medium">
+        The platform cables break when the player touches the platform, thus giving the player a memorable moment in the level. After the player drops down three floors, 
+        he needs to fight his way back, while going up.
+      </p>
+      <p class="mt-10 text-3xl font-medium">
+        The last part of this floor (outside area) acts as a skill check for the parkouring mechanics because of the increased complexity and back-to-back wall runs.
+      </p>
+  </div>
+
+</section>
+
+<section class="container mt-32 text-left min-w-full text-white font-normal ">
+
+  <div class="text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+   <img src="/assets/Showcase In Game.4d3116b2.gif" class="max-w-4xl float-left">
+
+   <div class="mt-7 text-5xl text-center text-white font-bold  ">
+    <h1> Dimension Switch </h1>
+    </div>
+
+      <p class="mt-10 text-3xl font-medium">
+      The roof is the final part of the Rival Gang HQ and is an arena filled with enemies.
+      </p>
+      <p class="mt-10 text-3xl font-medium">
+        The very first place on this floor is a very big cover, that provides the player a view of the entire "arena" so that he can choose the best path for him.
+        </p>
+        <p class="mt-10 text-3xl font-medium">Throughout the floor there are a lot of covers that give the player some breathing time. </p>
+        <p class="mt-10 text-3xl font-medium">The player must kill all the enemies before facing the final boss on a slightly elevated platform.
+          After killing the final boss, the player gets a cutscene on which he first questions the main villain why did he kill his family and then proceeds by throwing him off the building.
+        </p>
+
+  </div>
+</section>
+
+
+<!-- <section class="container float-right text-center place-items-center content-center max-w-6xl m-auto text-white font-normal flex justify-center">
+  <div style="width:100%;height:0px;position:relative;padding-bottom:47.636%;"><iframe src="https://streamable.com/e/7ia5e7?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+</section> -->
+
+<section class="container pl-72 pr-72 mt-32 text-left min-w-full text-white font-normal ">
+  <div class="image-spliter">
+    <div class="mover"></div>
+    <img class="img-left" src="/assets/DoorsNormal.718b4ac5.png">
+    <img class="img-right" src="/assets/DoorsHell.4028d54f.png">
+</div>
+
+</section>
+
+<section class="container pl-72 pr-72 mt-32 text-left min-w-full text-white font-normal ">
+  <div class="image-spliter">
+    <div class="mover"></div>
+    <img class="img-left" src="/assets/PlatformsNormal.24a6615e.png">
+    <img class="img-right" src="/assets/PlatformsHell.9e17ddd0.png">
+</div>
+
+<script src="js/image-comparison-slider.min.js"></script>
+</section>
+
+
+
+
+
+  
+
+<!-- <section class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-20 flex justify-center">
+  <div style="width:100%;height:0px;position:relative;padding-bottom:47.636%;"><iframe src="https://streamable.com/e/7ia5e7?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+</section> -->
+
+  <section class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-5 mb-10 justify-center">
+
+    <div class="mt-7 text-5xl text-left text-white font-bold  ">
+      <h1> Gallery </h1>
+      <h6 class="text-left text-base text-gray-500 font-bold mt-3 "> (You can click on any of them to open the original quallity image)</h6>
+      </div>
+
+    
+    <article class="mt-5 grid grid-cols-4 gap-1">
+      <div class="cursor-pointer relative" style="width:300px; height:300px">
+          <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+              class="foto w-full h-full object-cover"
+              alt="description" />
+      </div>
+      <div class="cursor-pointer relative" style="width:300px; height:300px">
+          <img src="https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+              class="foto w-full h-full object-cover"
+              alt="description" />
+      </div>
+      <div class="cursor-pointer relative" style="width:300px; height:300px">
+          <img src="https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+              class="foto w-full h-full object-cover"
+              alt="description" />
+      </div>
+      <div class="cursor-pointer relative" style="width:300px; height:300px">
+        <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="foto w-full h-full object-cover"
+            alt="description" />
+    </div>
+    <div class="cursor-pointer relative" style="width:300px; height:300px">
+        <img src="https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="foto w-full h-full object-cover"
+            alt="description" />
+    </div>
+    <div class="cursor-pointer relative" style="width:300px; height:300px">
+        <img src="https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            class="foto w-full h-full object-cover"
+            alt="description" />
+    </div>
+    <div class="cursor-pointer relative" style="width:300px; height:300px">
+      <img src="https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          class="foto w-full h-full object-cover"
+          alt="description" />
+  </div>
+  <div class="cursor-pointer relative" style="width:300px; height:300px">
+      <img src="https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          class="foto w-full h-full object-cover"
+          alt="description" />
+  </div>
+  </article>
+    </section>
+
+    
+
+
+<footer id="end" class="bg-footer text-center max-w-full h-auto font-normal text-bold text-footertext">
+
+  <section class="container flex items-center justify-center max-w-full h-auto  bg-fixed bg-center bg-cover bg-no-repeat custom-img-banner">
+
+    
+      <div class="mx-auto p-5 text-center text-white bg-gray-800 bg-opacity-75 ">
+        <span style="color: gray" class="p-5 mt-10">
+
+          <a href="https://www.linkedin.com/in/paul-bogdan-grigore-a9b4aa140/" class="ml-2 hover:text-white"><i class="md:fa-xs fa-2x fab fa-linkedin"></i></a>
+          <a href="mailto:vipulul@gmail.com" class="ml-2 hover:text-white"><i class="fas fa-envelope-square fa-2x"></i> </a>
+          <a href="https://github.com/vipulul" class="ml-2 hover:text-white" ><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/vipulul/" class="ml-2 hover:text-white"><i class="fab fa-instagram-square fa-2x"></i> </a>
+          <a href="https://twitter.com/vipulul69" class="ml-2 hover:text-white"><i class="fab fa-twitter-square fa-2x"></i> </a>
+          </span>
+
+      </div>
+
+  </section>
+  
+</footer>
+
+  <!--
+  <div >
+    <img class="object-cover h-auto w-full" src="images/Test1.png">
+  </div> -->
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrollex.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/browser.min.js"></script>
+  <script src="js/breakpoints.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
