@@ -1,52 +1,60 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEAElEQVRYR91XSSi1bRi+zmfIPEUnYSNlSZQ5loaMxcJsYTplKJ0yDxs2JAtZo5SFSBRiY4iwYCEiC0NKMs/z+brueo/zH/7v9xVO/U/pPd7zvPdz3dd93df9HpVardbBhEtlcgDe3t46R0dH/Pr1S8/D6+srbm9vcXl5CX42XNzn4OAAW1tbqFQq/VePj4+4vr7G3d0ddLo3Uo3387ubmxt9bJVGo9EVFRVJ0JOTEzw/P8PCwgILCwvo6enBwcHBP0AQbH5+PuLj42Fubo6zszPZf3R0hOHhYYyPjwt4Lh7u5eWFnJwchIaG6mPPz8+ju7tbYqu0Wq2usrJSDqmqqpJADQ0N8PDwwMDAALq6unBxcaHP1NnZGRUVFUhLS8POzg6am5sREhKCzMxM+b+8vBx7e3vCgpubGxg7MjISc3NzGBwcRHZ2Nvz9/TEyMoLOzs43AKSwoKBAUDU2NiIqKgqzs7Oora3F8fHxOwCpqanY2tpCaWkpfHx80N7ejpeXF0liZmZGPgcEBKCtrQ329vaoqanB4uIiYmNjhZH9/X2592UM5OXlSeYajQa7u7uikYyMDJSVleH8/By5ubm4urqCi4sLWMb7+3tsbGy8ASDKzc1NqZ+igd7eXpyenoo+WE/SamlpKUyRAa7t7W05TK1WY3JyEi0tLTg8PISdnR0IioDIIK9JSUmiBVdXV2GA4N4xsL6+DpaDQB4eHhAUFCToiZoKX1lZEWHFxMRIzevr60FdNDU1SVfU1dVJvZmEwgCTyMrKEp3FxcXJwbyXnp7+XgOrq6tSPy4GtLa2hpOT0zsGUlJSRAPFxcWwsrISsXp6eqKjowP9/f0CnhpobW2VZ9lpLFFCQoLUnt3znwA+MkjjLqBg2TFarVaAkwkyQABKF0RERGB6elq6gAwkJyeLTghK7wNPT0+orq4GS6Aw8BEAYx8glWZmZuDz1ACzZ3bUi7EPcA81xMOHhoakW1SKE/IBGhHr/6f1b05I0HRC/v3JCRmb7LAjeDX9LPjMMGLWbFPDefFVA/RTDLDuVCyvX70+BYDKLywsFBdjfSkm1lrRw0fMcB/djn6iaIJtbWNjI22rTNK/BsBpScdkS5ER+jp9wnhRYMvLy5iampKuop+wW+gNgYGBem/5awDMfm1tDbRpMlNSUiLMGC9mTz/gePbz80NYWJg4J+/5+voiOjpaQHw7gImJCQQHB4t108r7+vpkViQmJgoTPwaAY5haGB0dxdLSEsLDwwXUjwJgmcbGxqQMLAsn6o8CMCkD36IBuqNhG/IlVXl5+bYuUHyAL6xUtXIgjcXd3V1GLe99mw8YOqHxbwZDBr7UCU0+C0w+Db96AhrG+5QP/K8B/AbvMybr7UUJOgAAAABJRU5ErkJggg=="/>
-    <title>Paul-Bogdan Grigore | Level Designer</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/b42a0ee549.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
-  <link rel="stylesheet" href="/assets/tailwind.2631bac9.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEAElEQVRYR91XSSi1bRi+zmfIPEUnYSNlSZQ5loaMxcJsYTplKJ0yDxs2JAtZo5SFSBRiY4iwYCEiC0NKMs/z+brueo/zH/7v9xVO/U/pPd7zvPdz3dd93df9HpVardbBhEtlcgDe3t46R0dH/Pr1S8/D6+srbm9vcXl5CX42XNzn4OAAW1tbqFQq/VePj4+4vr7G3d0ddLo3Uo3387ubmxt9bJVGo9EVFRVJ0JOTEzw/P8PCwgILCwvo6enBwcHBP0AQbH5+PuLj42Fubo6zszPZf3R0hOHhYYyPjwt4Lh7u5eWFnJwchIaG6mPPz8+ju7tbYqu0Wq2usrJSDqmqqpJADQ0N8PDwwMDAALq6unBxcaHP1NnZGRUVFUhLS8POzg6am5sREhKCzMxM+b+8vBx7e3vCgpubGxg7MjISc3NzGBwcRHZ2Nvz9/TEyMoLOzs43AKSwoKBAUDU2NiIqKgqzs7Oora3F8fHxOwCpqanY2tpCaWkpfHx80N7ejpeXF0liZmZGPgcEBKCtrQ329vaoqanB4uIiYmNjhZH9/X2592UM5OXlSeYajQa7u7uikYyMDJSVleH8/By5ubm4urqCi4sLWMb7+3tsbGy8ASDKzc1NqZ+igd7eXpyenoo+WE/SamlpKUyRAa7t7W05TK1WY3JyEi0tLTg8PISdnR0IioDIIK9JSUmiBVdXV2GA4N4xsL6+DpaDQB4eHhAUFCToiZoKX1lZEWHFxMRIzevr60FdNDU1SVfU1dVJvZmEwgCTyMrKEp3FxcXJwbyXnp7+XgOrq6tSPy4GtLa2hpOT0zsGUlJSRAPFxcWwsrISsXp6eqKjowP9/f0CnhpobW2VZ9lpLFFCQoLUnt3znwA+MkjjLqBg2TFarVaAkwkyQABKF0RERGB6elq6gAwkJyeLTghK7wNPT0+orq4GS6Aw8BEAYx8glWZmZuDz1ACzZ3bUi7EPcA81xMOHhoakW1SKE/IBGhHr/6f1b05I0HRC/v3JCRmb7LAjeDX9LPjMMGLWbFPDefFVA/RTDLDuVCyvX70+BYDKLywsFBdjfSkm1lrRw0fMcB/djn6iaIJtbWNjI22rTNK/BsBpScdkS5ER+jp9wnhRYMvLy5iampKuop+wW+gNgYGBem/5awDMfm1tDbRpMlNSUiLMGC9mTz/gePbz80NYWJg4J+/5+voiOjpaQHw7gImJCQQHB4t108r7+vpkViQmJgoTPwaAY5haGB0dxdLSEsLDwwXUjwJgmcbGxqQMLAsn6o8CMCkD36IBuqNhG/IlVXl5+bYuUHyAL6xUtXIgjcXd3V1GLe99mw8YOqHxbwZDBr7UCU0+C0w+Db96AhrG+5QP/K8B/AbvMybr7UUJOgAAAABJRU5ErkJggg==" />
+  <title>Paul-Bogdan Grigore | Level Designer</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/b42a0ee549.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+  <link rel="stylesheet" href="/assets/tailwind.5d123b2f.css">
 </head>
+
 <body class=" bg-bgray-900">
   <div id="one">
 
   </div>
   <header class=" bg-gray-900" id="header">
     <nav id="nav" class="  bg-gray-900">
-        <div class=" mx-auto px-10 sm:px-6 lg:px-8 h-24" >
-          <div class="relative flex items-center justify-between h-auto">
-            <div class="flex-1 inline-flex items-center justify-center sm:items-stretch sm:justify-start">
-              <a href="index.html">
+      <div class=" mx-auto px-10 sm:px-6 lg:px-8 h-24">
+        <div class="relative flex items-center justify-between h-auto">
+          <div class="flex-1 inline-flex items-center justify-center sm:items-stretch sm:justify-start">
+            <a href="index.html">
               <div class="flex-shrink-0 flex items-center">
                 <img class="block lg:hidden h-9 w-auto" src="/assets/logo.031e90d2.png" alt="Workflow">
                 <img class="hidden lg:block h-20 w-auto" src="/assets/logo.031e90d2.png" alt="Workflow">
               </div>
             </a>
-              <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4 mt-8">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <!-- <a href="#" class="bg-gray-900 text-gray-400 px-3 py-2 rounded-md text-sm font-medium scrolly">Home</a> -->
-                  <a href="index.html#one" id="homebutton" class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                  <a href="index.html#two" id="projbutton" class="more scrolly  text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium scrolly">Projects</a>
-                  <a href="index.html#about" id="aboutbutton" class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Me</a>
-                  <a href="index.html#end" id="contactbutton" class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Me</a>
-                </div>
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4 mt-8">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <!-- <a href="#" class="bg-gray-900 text-gray-400 px-3 py-2 rounded-md text-sm font-medium scrolly">Home</a> -->
+                <a href="index.html#one" id="homebutton"
+                  class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="index.html#two" id="projbutton"
+                  class="more scrolly  text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium scrolly">Projects</a>
+                <a href="index.html#about" id="aboutbutton"
+                  class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About
+                  Me</a>
+                <a href="index.html#end" id="contactbutton"
+                  class="more scrolly text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact
+                  Me</a>
               </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">      
-              <!-- Profile dropdown -->
-              <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4 mt-8">
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <!-- Profile dropdown -->
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4 mt-8">
 
-                </div>
               </div>
+            </div>
 
-                <!--
+            <!--
                   Profile dropdown panel, show/hide based on dropdown state.
       
                   Entering: "transition ease-out duration-100"
@@ -56,23 +64,24 @@
                     From: "transform opacity-100 scale-100"
                     To: "transform opacity-0 scale-95"
                 -->
-                
-            </div>
+
           </div>
         </div>
-      
-        <!-- Mobile menu, show/hide based on menu state. -->
+      </div>
 
-      </nav>
-    </header>
+      <!-- Mobile menu, show/hide based on menu state. -->
+
+    </nav>
+  </header>
 
 
 
-  <section id="lmao" class="container flex items-center justify-center max-w-full h-4/6  bg-fixed bg-center bg-cover bg-no-repeat custom-img4 ">
-        <div class="m-6 p-5 text-center text-5xl text-white bg-opacity-100 font-bold bg-gray-500 ">
-          <h1>LURK</h1>
-          <p class="text-xl">GAME DESIGN / PUZZLE DESIGN</p>
-        </div>
+  <section id="lmao"
+    class="container flex items-center justify-center max-w-full h-4/6  bg-fixed bg-center bg-cover bg-no-repeat custom-img4 ">
+    <div class="m-6 p-5 text-center text-5xl text-white bg-opacity-100 font-bold bg-gray-500 ">
+      <h1>LURK</h1>
+      <p class="text-xl">GAME DESIGN / PUZZLE DESIGN</p>
+    </div>
   </section>
 
   <div class="mt-7 text-5xl text-center text-white font-bold  ">
@@ -80,102 +89,206 @@
   </div>
 
 
-  <section class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-10 flex justify-center">
-     <iframe width="1000" height="500" src="https://www.youtube.com/embed/yGqF14T7Tw0" title="YouTube video player" frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  <section
+    class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-10 flex justify-center">
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/yGqF14T7Tw0" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+      allowfullscreen></iframe>
   </section>
 
 
-  
+
   <section class="container text-left max-w-6xl m-auto text-white font-normal mt-10">
 
     <div class="m-6 p-5 text-center text-5xl text-white font-bold  ">
       <h1>ABOUT</h1>
     </div>
 
-  <div class="flex flex-wrap text-center">
-    <div class="w-full sm:w-1/2 lg:w-2/4 xl:w-3/6 mb-4 p-10 ">
-      <div class="text-3xl text-white font-bold  ">
-        <h1> Summary </h1>
+    <div class="flex flex-wrap text-center">
+      <div class="w-full sm:w-1/2 lg:w-2/4 xl:w-3/6 mb-4 p-10 ">
+        <div class="text-3xl text-white font-bold  ">
+          <h1> Summary </h1>
+        </div>
+        <p class="text-xl text-white font-normal  ">
+          This was the second project of my first year of university, where we were tasked with creating a
+          point-and-click adventure game in Processing. Our game won the tournament of the best game created by students
+          on that specific project.
+
+        </p>
       </div>
-      <p class="text-xl text-white font-normal  ">
-        This was the second project of my first year of university, where we were tasked with creating a point-and-click adventure game in Processing. Our game won the tournament of the best game created by students on that specific project. 
-
-      </p>
-    </div>
-    <div class="w-full sm:w-1/2 lg:w-2/4 xl:w-3/6 mb-4 p-10 ">
-      <div class="text-3xl text-white font-bold  ">
-        <h1> Details </h1>
+      <div class="w-full sm:w-1/2 lg:w-2/4 xl:w-3/6 mb-4 p-10 ">
+        <div class="text-3xl text-white font-bold  ">
+          <h1> Details </h1>
+        </div>
+        <p class="text-xl text-white font-normal  ">
+          Tools: Processing
+        </p>
+        <p class="text-xl text-white font-normal  ">
+          Date: November-December 2019
+        </p>
+        <p class="text-xl text-white font-normal  ">
+          Development Time: 2 Weeks
+        </p>
+        <p class="text-xl text-white font-normal  ">
+          Team: Artist: Finn Tran and Donislav Todorov
+          Designers : Paul-Bogdan Grigore and Yonah Mercilia
+          Engineer: Bram Reuling
+        </p>
+        <p class="text-xl text-white font-normal  ">
+          <a href="https://lurk.bramreuling.com/" class="underline"> Link to the game website. </a>
+        </p>
       </div>
-      <p class="text-xl text-white font-normal  ">
-        Tools: Processing
-      </p>
-      <p class="text-xl text-white font-normal  ">
-        Date: November-December 2019
-      </p>
-      <p class="text-xl text-white font-normal  ">
-        Development Time: 2 Weeks
-      </p>
-      <p class="text-xl text-white font-normal  ">
-        Team:  Artist: Finn Tran and Donislav Todorov
-        Designers : Paul-Bogdan Grigore and Yonah Mercilia
-        Engineer: Bram Reuling
-      </p>
-    </div>
-  </div>
-
-  <div class="m-6 text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
-    <p></p>
-
-    <div class="mt-7 text-3xl text-center text-white font-bold  ">
-      <h1> Quick Summary </h1>
     </div>
 
-    <p class="mt-7">
-      Lurk is a point and click interactive story, in
-which you play as Officer Jones, a cop which is
-tasked to investigate an apartment block in
-New York. Can you solve the murder case?
-    </p>
 
-</div>
+
+    <div class="m-6 text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+      <p></p>
+
+      <div class="mt-7 text-3xl text-center text-white font-bold  ">
+        <h1> Quick Summary </h1>
+      </div>
+
+      <p class="mt-7">
+        Lurk is a point and click interactive story, in
+        which you play as Officer Jones, a cop which is
+        tasked to investigate an apartment block in
+        New York. Can you solve the murder case?
+      </p>
+
+    </div>
   </section>
 
-<!-- <section class="container float-right text-center place-items-center content-center max-w-6xl m-auto text-white font-normal flex justify-center">
+  <div class="mt-24 text-5xl text-center text-white font-bold  ">
+    <h1> Small Puzzle Breakdown </h1>
+  </div>
+
+  <section class="container mt-24 text-left text-white font-normal 2xl:font-bold w-full max-w-8xl mx-auto">
+
+    <div class="text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+      <a href="images/Lurk/HallwayNewspaper.png"><img src="/assets/HallwayNewspaperOpt.60eb94d0.jpg"
+          class="max-w-4xl float-right ml-6"></a>
+
+      <p class="mt-10 text-4xl font-medium text-center">First Puzzle</p>
+
+      <p class="pt-32 font-medium">To progress through the game, you'll need to unlock the elevator door. The
+        key for the elevator door is locked with a numerical padlock. The padlock combination is made by the circled
+        numbers in the newspaper, in the main hallway. In this case, the combination is 4(for) 8(aight) 1(one).</p>
+
+      <p class="text-center text-sm font-base pb-32"> (Image clickable for better quallity) </p>
+    </div>
+
+  </section>
+
+  <section class="container mt-20 text-left text-white font-normal w-full max-w-8xl mx-auto ">
+
+    <div class="text-left text-xl text-white  bg-opacity-75 font-normal space-x-4">
+      <img src="/assets/OfficeOpt.e82445fa.jpg" class="max-w-4xl float-left mr-5">
+
+      <div class="pt-24 text-4xl font-medium text-center ">
+        <h1> Second Puzzle </h1>
+        <!-- <h6 class="text-center text-base text-white font-bold  "> (Red Circle = Starting Position , Green Circle = End
+          Position, Yellow Line = Golden Path, Dashed Dark Blue Line = Second Path)</h6> -->
+      </div>
+
+      <p class="mt-24 mb-40 font-medium">After you unlock the elevator and go up to a locked door and back down, the
+        office door on the main hallway weirdly opens, and inside there are three names scribbled on the wall (JCM,
+        KIIS, and Kimtron). If you take a glance around the room, there's another newspaper with some Board Game Charts
+        and between the game and votes, there are the three names with their votes JCM - 389, KIIS - 157, and Kimtron -
+        624. Using these numbers you can unlock the safe in the office and get another key that you can use on the
+        locked door on the third floor.</p>
+
+    </div>
+  </section>
+
+  <section
+    class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mb-10 justify-center">
+
+    <div class="mt-7 text-5xl text-left text-white font-bold  ">
+      <h1> Gallery </h1>
+      <h6 class="text-left text-base text-gray-500 font-bold mt-3 "> (You can click on any of them to open the original
+        quallity image)</h6>
+    </div>
+    <div class="flex flex-wrap justify-center sm:w-full md:w-full">
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/Elevator.png"><img src="/assets/ElevatorOpt.773cd9c9.jpg"></a>
+
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/Entrance.png"><img src="/assets/EntranceOpt.7f451b6f.jpg"></a>
+
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/Hallway.png"><img src="/assets/HallwayOpt.b47c9a2d.jpg"></a>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/HallwayBoard.png"><img src="/assets/HallwayBoardOpt.7f8091b9.jpg"></a>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/HallwayNewspaper.png"><img src="/assets/HallwayNewspaperOpt.60eb94d0.jpg"></a>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/Mailbox.png"><img src="/assets/MailboxOpt.1bd7f4b4.jpg"></a>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/Office.png"><img src="/assets/OfficeOpt.e82445fa.jpg"></a>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/OfficeDesk.png"><img src="/assets/OfficeDeskOpt.81eec963.jpg"></a>
+      </div>
+      <div class="sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+        <a href="images/Lurk/OfficeNewspayper.png"><img src="/assets/OfficeNewspayperOpt.adee4e1c.jpg"></a>
+    </div>
+    <div class=" sm:w-full md:w-full lg:w-2/5 xl:w-2/5 m-3 rounded shadow-lg overflow-hidden">
+          <a href="images/Lurk/SecondFloor.png"><img src="/assets/SecondFloorOpt.bacc1eb6.jpg"></a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- <section class="container float-right text-center place-items-center content-center max-w-6xl m-auto text-white font-normal flex justify-center">
   <div style="width:100%;height:0px;position:relative;padding-bottom:47.636%;"><iframe src="https://streamable.com/e/7ia5e7?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 </section> -->
 
 
 
-  
 
-<!-- <section class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-20 flex justify-center">
+
+  <!-- <section class="container text-center place-items-center content-center max-w-6xl m-auto text-white font-normal mt-20 flex justify-center">
   <div style="width:100%;height:0px;position:relative;padding-bottom:47.636%;"><iframe src="https://streamable.com/e/7ia5e7?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 </section> -->
-   
 
 
-<footer id="end" class="bg-footer text-center max-w-full h-auto font-normal text-bold text-footertext">
 
-  <section class="container flex items-center justify-center max-w-full h-auto  bg-fixed bg-center bg-cover bg-no-repeat custom-img-banner">
+  <footer id="end" class="bg-footer text-center max-w-full h-auto font-normal text-bold text-footertext">
 
-    
+    <section
+      class="container flex items-center justify-center max-w-full h-auto  bg-fixed bg-center bg-cover bg-no-repeat custom-img-banner">
+
+
       <div class="mx-auto p-5 text-center text-white bg-gray-800 bg-opacity-75 ">
         <span style="color: gray" class="p-5 mt-10">
 
-          <a href="https://www.linkedin.com/in/paul-bogdan-grigore-a9b4aa140/" class="ml-2 hover:text-white"><i class="md:fa-xs fa-2x fab fa-linkedin"></i></a>
-          <a href="mailto:paulgrigoreld@gmail.com" class="ml-2 hover:text-white"><i class="fas fa-envelope-square fa-2x"></i> </a>
-          <a href="https://github.com/vipulul" class="ml-2 hover:text-white" ><i class="fab fa-github-square fa-2x"></i></a>
-          <a href="https://www.instagram.com/vipulul/" class="ml-2 hover:text-white"><i class="fab fa-instagram-square fa-2x"></i> </a>
-          <a href="https://twitter.com/vipulul69" class="ml-2 hover:text-white"><i class="fab fa-twitter-square fa-2x"></i> </a>
-          </span>
+          <a href="https://www.linkedin.com/in/paul-bogdan-grigore-a9b4aa140/" class="ml-2 hover:text-white"><i
+              class="md:fa-xs fa-2x fab fa-linkedin"></i></a>
+          <a href="mailto:paulgrigoreld@gmail.com" class="ml-2 hover:text-white"><i
+              class="fas fa-envelope-square fa-2x"></i> </a>
+          <a href="https://github.com/vipulul" class="ml-2 hover:text-white"><i
+              class="fab fa-github-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/vipulul/" class="ml-2 hover:text-white"><i
+              class="fab fa-instagram-square fa-2x"></i> </a>
+          <a href="https://twitter.com/vipulul69" class="ml-2 hover:text-white"><i
+              class="fab fa-twitter-square fa-2x"></i> </a>
+        </span>
 
       </div>
 
-  </section>
-  
-</footer>
+    </section>
+
+
+
+  </footer>
 
   <!--
   <div >
@@ -196,4 +309,5 @@ New York. Can you solve the murder case?
 
 
 </body>
+
 </html>
